@@ -1,32 +1,55 @@
 # manage-debt
 
-FIXME: description
+Debt Counseling & Repayment Plan System
 
-## Installation
+## Technology
 
-Download from http://example.com/FIXME.
+Clojure
 
-## Usage
+**Libraries** 
+* mount 
+* http-client 
+* reitit 
+* HugSQL
 
-FIXME: explanation
+More info on project no functional requirements in doc/no_functional_requirements.md
 
-    $ java -jar manage-debt-0.1.0-standalone.jar [args]
+## Description
 
-## Options
+API to assist clients in managing debt through an automated Debt Counseling & Repayment Plan System. The system should
+* Analyze a client’s income, expenses, and outstanding debts
+* Generate personalized repayment plans using predefined financial rules
+* Automate compliance tracking for legal debt counseling
+* Provide a client self-service portal for tracking progress
 
-FIXME: listing of options this app accepts.
+More info on project functional requirements in doc/functional_requirements.md
 
-## Examples
+## Architecture
 
-...
+The system follows a microservices-based architecture to ensure scalability, maintainability, and performance.
+It consists of several loosely coupled services communicating via REST APIs.
 
-### Bugs
+* Backend: Clojure-based microservices
+* Frontend: ? 
+* Database: PostgreSQL
+* Deployment: Docker + Kubernetes
+* Security: OAuth2 for authentication
 
-...
+### System design 
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+#### Data model and API 
+
+Three main tables 
+* client
+* debts
+* repayment_plan
+
+API 
+* Debt Management
+* Repayment Plan
+* Client portal
+
+More info on architecture and system design here doc/architecture_and_system_design.md
 
 ## License
 
