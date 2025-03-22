@@ -51,6 +51,10 @@ API
 
 More info on architecture and system design here doc/architecture_and_system_design.md
 
+## TODO
+* Docker 
+* DB 
+
 ## License
 
 Copyright © 2025 FIXME
