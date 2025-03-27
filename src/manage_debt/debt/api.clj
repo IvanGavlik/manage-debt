@@ -2,16 +2,11 @@
   (:require
     [reitit.core :as reitit]
     [reitit.ring :as ring]
+    [mount.core :as mount]
     ))
 
+(defn start-connection [] (str "I have conn :)"))
 
-(comment
-
-  POST /debt-assessment → Accepts client debt details and stores them.
-  GET /debt-assessment/ {id} → Retrieves a stored debt assessment.
-  PUT /debt-assessment/ {id} → Updates a client’s financial status.
-
-  )
 
 (defn handler [_]
   {:status 200, :body "ok"})
